@@ -1,0 +1,161 @@
+/*
+  Colors
+ */
+
+$enabled-color: #1A95CE;
+$disabled-color: #AAAAAA;
+$warn-color: #B83B3B;
+$text-color: #222;
+$border-color: #DDD;
+
+
+/****************************************
+  Elements
+*****************************************/
+
+html {
+  color: $text-color;
+  font: 12pt Arial;
+}
+
+body {
+  margin: 3rem;
+}
+
+a {
+  color: $enabled-color;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+input, select {
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 8px 8px;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: $enabled-color;
+}
+
+
+/**
+ * Main Layout
+ */
+
+.app {
+  display: flex;
+  min-width: 800px;
+}
+
+.primary-aside {
+  width: 12rem;
+}
+
+.primary-aside ul {
+  list-style: none;
+  margin: 0;
+}
+
+.primary-aside a {
+  display: block;
+  padding: 0.6rem;
+}
+
+.primary-aside a.active {
+  display: none;
+}
+
+main {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+
+/**
+ * Buttons
+ */
+
+button {
+  background-color: $enabled-color;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+}
+
+button:disabled,
+button[disabled]{
+  background-color: $disabled-color;
+  cursor: default;
+}
+
+
+button.delete {
+  background-color: $warn-color;
+}
+
+.buttons{
+  width: 80px;
+}
+
+
+/**
+ * Login page
+ */
+
+.login-page {
+  position: fixed;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+
+.login-page td {
+  padding: 0.4rem;
+}
+
+
+/**
+ * Data rows
+ */
+
+.data-row {
+  padding: 0.6rem;
+  display: flex;
+  border-bottom: 1px solid $border-color;
+}
+
+.data-row .data-row-cell {
+  flex: 1;
+  position: relative;
+  top: 50%;
+  transform: translateY(25%);
+}
+
+
+/**
+ * Add page
+ */
+
+.field-label {
+  margin-bottom: 0.3rem;
+}
+
+.field-editor {
+  margin-bottom: 1.5rem;
+  min-width: 300px;
+}
+
+select.field-editor {
+  min-width: 318px;
+}

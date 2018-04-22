@@ -2,14 +2,20 @@ import React from 'react';
 import BaseComponent from "./baseComponent";
 import * as transactionApi from "../api/transaction-api";
 import {connect} from "react-redux";
+import * as bankApi from "../api/bank-api";
 
 class Transactions extends BaseComponent {
     componentDidMount() {
-        transactionApi.getTransactions()
+        super.componentDidMount();
+        transactionApi.getTransactions();
+        if (this.props.banks.length == 0) {
+            bankApi.getBanks();
+        }
     }
 
     getBankName(bankId) {
-        return this.props.banks.find(b => b.id == bankId).name;
+        let bank = this.props.banks.find(b => b.id == bankId);
+        return (bank) ? bank.name : bankId;
     }
 
     render() {

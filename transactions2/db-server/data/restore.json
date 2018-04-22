@@ -1,0 +1,79 @@
+﻿{
+  "banks": [
+    {
+      "id": 1,
+      "name": "Сбербанк России"
+    },
+    {
+      "id": 2,
+      "name": "Банк ВТБ"
+    },
+    {
+      "id": 3,
+      "name": "Bank of America"
+    },
+    {
+      "id": 4,
+      "name": "Royal Bank of Canada"
+    },
+    {
+      "id": 5,
+      "name": "Deutsche Bank"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "amount": 100,
+      "bankId": 1
+    },
+    {
+      "id": 2,
+      "amount": 200,
+      "bankId": 2
+    },
+    {
+      "id": 3,
+      "amount": 350,
+      "bankId": 3
+    },
+    {
+      "id": 4,
+      "amount": 400,
+      "bankId": 4
+    },
+    {
+      "id": 5,
+      "amount": 575,
+      "bankId": 5
+    },
+    {
+      "id": 6,
+      "amount": 150,
+      "bankId": 1
+    },
+    {
+      "id": 7,
+      "amount": 340,
+      "bankId": 3
+    },
+    {
+      "id": 8,
+      "amount": 700,
+      "bankId": 5
+    },
+    {
+      "id": 9,
+      "amount": 210,
+      "bankId": 4
+    },
+    {
+      "id": 10,
+      "amount": 190,
+      "bankId": 2
+    }
+  ],
+  "user": {
+    "loggedIn": false
+  }
+}
